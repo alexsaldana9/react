@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React - udemy class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Refresh - Classes</h1>
+      
+
+    </div>
+    <script>
+
+        class Human {
+            constructor(){
+                this.gender = "female";
+            }
+            printGender(){
+                console.log(this.gender);
+            }
+        }
+
+        class Person extends Human {
+            constructor() {
+                super();
+                this.name = "Alex";
+                this.gender = "FEMALE";
+            }
+            printName() {
+                console.log(this.name);
+            }
+        }
+
+        const person = new Person();
+        person.printName();
+        person.printGender();
+
+        console.log("-------------------Next Gen JS -------------------------------")
+        // ES7 does not use constructor
+
+        class HumanES7 {
+            gender = "female";
+            printGender = () => {
+                console.log(this.gender);
+            }
+        }
+
+        class PersonES7 extends HumanES7 {
+            name = "Alex --- 2";
+            gender = "FEMALE --- 2";
+            
+            printName = () => {
+                console.log(this.name);
+            }
+        }
+
+        const person2 = new PersonES7();
+        person2.printName();
+        person2.printGender();
+
+
+    </script>
+</body>
+</html>

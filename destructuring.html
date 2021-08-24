@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React - udemy class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Refresh - Destructuring</h1>
+      
+
+    </div>
+    <script>
+        const numbers =[1,2,3];
+
+        // [num1, num2] = numbers;
+        
+        [num1, , num3] = numbers;
+
+        console.log(num1, num3);
+
+        console.log(numbers);
+
+
+        // destructure object
+
+        const user = {
+            id: 42,
+            is_verified: true
+        };
+
+        const {id, is_verified} = user;
+
+        console.log(id); // 42
+        console.log(is_verified); // true
+
+        
+    </script>
+</body>
+</html>

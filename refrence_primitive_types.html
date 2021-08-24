@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React - udemy class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Refresh - Reference and Primitive Types</h1>
+      
+        
+    </div>
+    <script>
+        // Primitive types = String, number, booleans
+
+        // Objects and Arrays are reference types
+
+
+        const person = {
+            name: 'Leia'
+        }
+
+        // copies the pointer to the person variable in memory. this is refrence
+        const secondPerson = person;
+
+        //person.name = 'Alex';
+
+        console.log(secondPerson.name);
+
+        // ... pulls the properties and values from the person object and creates a new
+        // object secondPersonObjectCopy.
+        const secondPersonObjectCopy = {
+            ...person
+        };
+
+        person.name = 'Alex';
+
+        console.log(secondPersonObjectCopy);
+    </script>
+</body>
+</html>

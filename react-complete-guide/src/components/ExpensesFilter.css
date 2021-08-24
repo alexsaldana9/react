@@ -1,0 +1,15 @@
+.expensesFilter__label {
+    float: left;
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+}
+
+.expensesFilter__section {
+    margin-bottom: 40px;
+}
+
+.expensesFilter__dropdown {
+    float: right;
+    margin-right: 50px;
+}

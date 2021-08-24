@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React - udemy class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Refresh</h1>
+      
+
+    </div>
+    <script>
+        
+
+        //let and const
+
+        // let and const - introduced in JS6. Avoid using var.
+        // let  - use let for variables
+        // const - use const for Constants 
+
+        let newVar = "new";
+
+        newVar = "another name";
+        console.log(newVar);
+
+        const NAME ="ALEX";
+
+        console.log(NAME);
+
+        console.log("==============Test Arrow Functions ===========");
+
+        function printName(name) {
+            console.log("Name is: ", name);
+        }
+
+        printName(NAME);
+
+        let printName2 = (name, age) => {
+            console.log("Arrow function name is: ", name);
+            console.log("Arrow function age is: ", age);
+        }
+
+        printName2(NAME, 28);
+
+        let multiply = (num1, num2) => {
+            return num1 * num2;
+        }
+
+       console.log(multiply(2 ,3));
+
+    </script>
+</body>
+</html>

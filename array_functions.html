@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>React - udemy class</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Refresh - Array Functions</h1>
+      
+    </div>
+    <script>
+        const numbers = [1,2,3];
+
+        const doubleNumArray = numbers.map((num) => {
+            return num * 2;
+        });
+
+
+        console.log(numbers);
+
+        console.log(doubleNumArray);
+
+
+        const names = ["Alex", "Leia"];
+
+        const printNames = names.map((name) => {
+            return name;
+        });
+
+        console.log(printNames);
+        console.log("------------------------------------------------------");
+
+        function vowelsAndConsonants(s) {
+            
+            let consonants = [];
+            let vowelsInString = [];
+            const vowels = ["a" ,"e", "i", "o", "u"];
+            
+            for (let i = 0; i < s.length; i++) {                
+                let foundVowel = false;
+
+                for (let j = 0; j < vowels.length; j++) {
+                    // console.log(":::::::::::VOWEL:::::::: " + vowels[j], 'char', s.charAt(i));
+
+                    if (s.charAt(i) === vowels[j]) {
+                        vowelsInString.push(s.charAt(i));
+                        //console.log("s.charAt(i) is VOWEL = (", s.charAt(i) + ") === " + vowels[j]);
+                        foundVowel = true;
+                    }
+                }
+
+                if (!foundVowel) {
+                    consonants.push(s.charAt(i));
+                }                
+            }        
+
+           // console.log("PRINT Vowels in string");
+            for (let l = 0; l < vowelsInString.length ; l++) {
+                console.log(vowelsInString[l]);
+            }
+
+           // console.log("PRINT consonants");
+            for (let k = 0; k < consonants.length ; k++) {
+                console.log(consonants[k]);
+            } 
+
+            //console.log("PRINT consonants END --------------");            
+        }
+
+        vowelsAndConsonants("javascriptloops");
+
+    </script>
+</body>
+</html>
