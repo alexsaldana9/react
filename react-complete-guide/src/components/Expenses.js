@@ -22,7 +22,7 @@ const Expenses = (props) => {
     });
 
     return (
-        <div>
+        <div className="container-expenses">
             <Card className="expenses">
                 <ExpensesFilter 
                     selected={filteredYear} 

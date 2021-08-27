@@ -5,3 +5,9 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.container-expenses {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
